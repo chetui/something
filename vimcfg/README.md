@@ -21,7 +21,7 @@ mv ~/.vim ~/.vim.old
  git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
  ```
 
-3. Install all the plugin:
+3. Install all the plugins:
 
  ```bash
  vim +BundleInstall +qall 
@@ -34,7 +34,7 @@ mv ~/.vim ~/.vim.old
  vim ~/.vim/bundle/winmanager/plugin/winmanager.vim
  ```
 
- add <exec 'q'> in following position:
+ add **exec 'q'** in following position:
  ```bash
       function! <SID>ToggleWindowsManager()
         if IsWinManagerVisible()
