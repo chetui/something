@@ -1,9 +1,13 @@
-### If ~/.vimrc and ~/.vim/ exist  
+### If ~/.vimrc and ~/.vim/ exist, then backup your original vim config
 
+```bash
 mv ~/.vimrc ~/.vimrc.old
 mv ~/.vim ~/.vim.old
+```
 
 ### do following steps
+
+1. put files in your home:  
 
 ```bash  
 mv something/vimcfg/vimrc ~/.vimrc  
@@ -11,6 +15,34 @@ mkdir ~/.vim
 mv something/vimcfg/colors ~/.vim/
 ```
 
+2. download the plugin mamage plugin:
 
+```bash
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-vim +BundleInstall +qall
+```
+
+3. Install all the plugin:
+
+```bash
+vim +BundleInstall +qall 
+#in this setp, it may ask you for username or password, please type the ENTER instead of type your username or password.
+```
+
+4. fix a bug of WinManager:
+
+```bash
+vim ~/.vim/bundle/winmanager/plugin/winmanager.vim
+```
+
+add <exec 'q'> in following position:
+```bash
+      function! <SID>ToggleWindowsManager()
+        if IsWinManagerVisible()
+           call s:CloseWindowsManager()
+        else
+           call s:StartWindowsManager()
+           exe 'q'   
+        end
+     endfunction
+```
+
