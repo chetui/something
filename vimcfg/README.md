@@ -9,33 +9,33 @@ mv ~/.vim ~/.vim.old
 
 1. put files in your home:  
 
-      ```bash  
-      mv something/vimcfg/vimrc ~/.vimrc  
-      mkdir ~/.vim
-      mv something/vimcfg/colors ~/.vim/
-      ```
+ ```bash  
+ mv something/vimcfg/vimrc ~/.vimrc  
+ mkdir ~/.vim
+ mv something/vimcfg/colors ~/.vim/
+ ```
 
 2. download the plugin mamage plugin:
 
-```bash
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-```
+ ```bash
+ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+ ```
 
 3. Install all the plugin:
 
-```bash
-vim +BundleInstall +qall 
-#in this setp, it may ask you for username or password, please type the ENTER instead of type your username or password.
-```
+ ```bash
+ vim +BundleInstall +qall 
+ #in this setp, it may ask you for username or password, please type the ENTER instead of type your username or password.
+ ```
 
 4. fix a bug of WinManager:
 
-```bash
-vim ~/.vim/bundle/winmanager/plugin/winmanager.vim
-```
+ ```bash
+ vim ~/.vim/bundle/winmanager/plugin/winmanager.vim
+ ```
 
-add <exec 'q'> in following position:
-```bash
+ add <exec 'q'> in following position:
+ ```bash
       function! <SID>ToggleWindowsManager()
         if IsWinManagerVisible()
            call s:CloseWindowsManager()
@@ -44,5 +44,5 @@ add <exec 'q'> in following position:
            exe 'q'   
         end
      endfunction
-```
+ ```
 
