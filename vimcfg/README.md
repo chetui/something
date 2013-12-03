@@ -1,3 +1,8 @@
+### requirements
+
+Your PC must connect the Internet.
+Installed Git & Vim.
+
 ### If ~/.vimrc and ~/.vim/ exist, then backup your original vim config
 
 ```bash
