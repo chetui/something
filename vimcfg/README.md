@@ -9,11 +9,11 @@ mv ~/.vim ~/.vim.old
 
 1. put files in your home:  
 
-```bash  
-mv something/vimcfg/vimrc ~/.vimrc  
-mkdir ~/.vim
-mv something/vimcfg/colors ~/.vim/
-```
+      ```bash  
+      mv something/vimcfg/vimrc ~/.vimrc  
+      mkdir ~/.vim
+      mv something/vimcfg/colors ~/.vim/
+      ```
 
 2. download the plugin mamage plugin:
 
