@@ -39,7 +39,7 @@ mv ~/.vim ~/.vim.old
  vim ~/.vim/bundle/winmanager/plugin/winmanager.vim
  ```
 
- add **exec 'q'** in following position:  
+ add **exe 'q'** in following position:  
  
  ```bash
       function! <SID>ToggleWindowsManager()
